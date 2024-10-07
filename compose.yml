@@ -10,6 +10,8 @@ services:
   eq1:
     build: debian
     hostname: eq1
+    dns:
+      - 192.168.20.11
     networks:
       rededns:
           ipv4_address: 192.168.20.100
